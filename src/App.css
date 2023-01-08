@@ -1,32 +1,50 @@
 :root {
   --big-padding: 40px;
+  --black: #111111;
+  --white: #ededed;
+}
 
-  --main: #34100a;
-  --secondary: #cbcac5;
+body {
+  background-color: red;
 }
 
 .App {
   text-align: center;
-  background: var(--main);
-  color: var(--secondary);
+  background-image: url(https://bestanimations.com/media/mirror-balls/1125958995disco-ball-animated-gif-13.gif);
+  background-size: 100vw;
+  background-position: -22%;
+  color: var(--white);
   height: 100vh;
   width: 100vw;
-
   overflow-x: hidden;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-.nav, .footer {
+.nav,
+.footer {
   height: 10vh;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: left;
+  gap: 20px;
   align-content: center;
-
   box-sizing: border-box;
   padding: var(--big-padding);
+  z-index: 10;
+}
 
-  font-family: 'MuseoModerno', cursive;
+.nav-item {
+  font-size: 1.2em;
+  padding: 15px;
+  border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+}
+
+.nav-item:hover {
+  background: #ffffff30;
+  cursor: pointer;
 }
 
 .photo_container {
@@ -34,7 +52,6 @@
   box-sizing: border-box;
   padding: 0 var(--big-padding);
   overflow: hidden;
-
   display: flex;
   flex-direction: row;
   gap: var(--big-padding);
@@ -48,11 +65,31 @@
 
 .photo:hover {
   border-radius: 160px 20px 20px 20px;
-  transition: border-radius .4s;
+  transition: border-radius 0.4s;
   transition-timing-function: ease-in-out;
   cursor: pointer;
 }
 
-.footer {
-  font-family: sans-serif;
+.name {
+  font-weight: 700;
+  font-size: 120px;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: left;
+  padding: var(--big-padding);
+}
+
+.occupation {
+  text-transform: uppercase;
+  font-weight: 800;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: var(--big-padding);
+}
+
+.nav {
+  justify-content: right;
 }
