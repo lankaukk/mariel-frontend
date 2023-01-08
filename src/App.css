@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: red;
+  background-color: var(--black);
 }
 
 .App {
@@ -22,6 +22,7 @@ body {
 
 .nav,
 .footer {
+  position: fixed;
   height: 10vh;
   width: 100vw;
   display: flex;
@@ -31,7 +32,40 @@ body {
   align-content: center;
   box-sizing: border-box;
   padding: var(--big-padding);
+  
+}
+
+.nav {
+  z-index: 50;
+}
+
+.footer {
+  padding: var(--big-padding);
   z-index: 10;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: var(--big-padding);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  align-content: center;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.nav-icon {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  padding: 30px;
+  z-index: 100;
 }
 
 .nav-item {
@@ -79,6 +113,7 @@ body {
   left: 0;
   text-align: left;
   padding: var(--big-padding);
+  z-index: 200;
 }
 
 .occupation {
@@ -92,4 +127,64 @@ body {
 
 .nav {
   justify-content: right;
+}
+
+.open {
+  transform: rotate(45deg);
+}
+
+.open:hover,
+.closed:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+.open,
+.closed {
+  display: none;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+}
+
+@media screen and (max-width: 960px) {
+  .name {
+    font-size: 60px;
+  }
+  .occupation {
+    right: unset;
+    left: 0;
+    bottom: 20px;
+  }
+
+  .open,
+  .closed {
+    display: block;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0vh;
+    left: -200%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    gap: 0;
+  }
+
+  .nav-menu.active {
+    background: var(--black);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 50;
+    padding-bottom: var(--big-padding);
+  }
+
+  .nav-item {
+    width: 100vw;
+    padding: var(--big-padding);
+  }
 }

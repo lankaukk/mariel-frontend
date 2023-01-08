@@ -1,19 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 
 export var Nav = (props) => {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const NavItem = (props) => {
+    return (
+      <div className="nav-item" onClick={closeMobileMenu}>
+        {props.name}
+        {props.children}
+      </div>
+    );
+  };
+
   return (
     <div className="nav">
-      <NavItem name='design'/>
-      <NavItem name='photography'/>
-      <NavItem name='about'/>
-      <NavItem name='contact'/>
+      <div className="nav-icon">
+        <div
+          onClick={handleClick}
+          className={click ? "open" : "closed"}
+          style={{ fontSize: 60 }}
+        >
+          +
+        </div>
+      </div>
+      <div className={click ? "nav-menu active" : "nav-menu"}>
+        <NavItem name="design" />
+        <NavItem name="photography" />
+        <NavItem name="about" />
+        <NavItem name="contact" />
+      </div>
     </div>
   );
 };
-
-var NavItem = (props) => {
-  return (
-    <div className="nav-item">{props.name}</div>
-  )
-}
