@@ -12,6 +12,7 @@ body {
   text-align: center;
   background-image: url(https://bestanimations.com/media/mirror-balls/1125958995disco-ball-animated-gif-13.gif);
   background-size: 100vw;
+  background-repeat: no-repeat;
   background-position: -22%;
   color: var(--white);
   height: 100vh;
