@@ -22,7 +22,7 @@ export var Nav = (props) => {
         <div
           onClick={handleClick}
           className={click ? "open" : "closed"}
-          style={{ fontSize: 60 }}
+          style={{ fontSize: 60, zIndex: 5000 }}
         >
           +
         </div>
