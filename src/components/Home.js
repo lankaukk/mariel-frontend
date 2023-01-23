@@ -9,9 +9,9 @@ export var Home = (props) => {
         <br />
         Quadrino
       </div>
-      <div className="occupation">
-        <div style={{ fontSize: "52px" }}>New York, NY</div>
-        <div style={{ fontSize: "27px" }}>Communication Designer</div>
+      <div className="subtitle">
+        <div className='location'>New York, NY</div>
+        <div className='occupation' >Communication Designer</div>
       </div>
     </div>
   );
