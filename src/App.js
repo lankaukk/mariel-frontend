@@ -2,7 +2,8 @@ import React from "react";
 import "./App.css";
 import { Nav } from "./components/Nav";
 import { Home } from "./components/Home";
-// import { Photos } from "./components/Photos";
+//import { Photography } from "./pages/Photography";
+//import { Design } from "./pages/design";
 import { Footer } from "./components/Footer";
 
 function App() {
@@ -10,6 +11,8 @@ function App() {
     <div className="App">
       <Nav />
       <Home />
+      {/* <Photography/> */}
+      {/* <Design /> */}
       <Footer />
     </div>
   );
