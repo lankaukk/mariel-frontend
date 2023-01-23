@@ -67,6 +67,7 @@ body {
   right: 0;
   padding: 30px;
   z-index: 5000;
+  user-select: none;
 }
 
 .nav-item {
@@ -114,10 +115,13 @@ body {
   left: 0;
   text-align: left;
   padding: var(--big-padding);
-  z-index: 200;
+  padding-right: 0;
+  z-index: 20;
+  user-select: none;
 }
 
 .subtitle {
+  user-select: none;
   text-transform: uppercase;
   font-weight: 800;
   position: fixed;
@@ -135,6 +139,7 @@ body {
 }
 
 .nav {
+  user-select: none;
   justify-content: right;
 }
 
