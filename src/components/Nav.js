@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 export var Nav = (props) => {
   const [click, setClick] = useState(false);
@@ -28,9 +29,15 @@ export var Nav = (props) => {
         </div>
       </div>
       <div className={click ? "nav-menu active" : "nav-menu"}>
-        <NavItem name="design" />
-        <NavItem name="photography" />
-        <NavItem name="contact" />
+      <Link to="/design">
+          <NavItem name="design" />
+        </Link>
+        <Link to="/photography">
+          <NavItem name="photography" />
+        </Link>
+        <Link to="/contact">
+          <NavItem name="contact" />
+        </Link>
       </div>
     </div>
   );

@@ -11,6 +11,11 @@ body {
   background-color: var(--black);
 }
 
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
 .App {
   text-align: center;
   background-image: url(https://bestanimations.com/media/mirror-balls/1125958995disco-ball-animated-gif-13.gif);

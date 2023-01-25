@@ -6,6 +6,7 @@ import { Nav } from "./components/Nav";
 import { Home } from "./pages/Home";
 import { Photography } from "./pages/Photography.js";
 import { Design } from "./pages/design";
+import { Contact } from "./pages/contact";
 import { Footer } from "./components/Footer";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/*" element={<Home />}></Route>
           <Route path="/design" element={<Design />}></Route>
           <Route path="/photography" element={<Photography />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
         </Routes>
         <Footer />
       </Router>
