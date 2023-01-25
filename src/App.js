@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { Nav } from "./components/Nav";
 import { Home } from "./pages/Home";
-import { Photography } from "./pages/photography.js";
+import { Photography } from "./pages/Photography.js";
 import { Design } from "./pages/design";
 import { Footer } from "./components/Footer";
 
