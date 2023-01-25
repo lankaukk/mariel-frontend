@@ -2,6 +2,9 @@
   --big-padding: 40px;
   --black: #111111;
   --white: #ededed;
+
+  --main: 'Syne', sans-serif;
+  --secondary: "Josefin Sans", sans-serif;
 }
 
 body {
@@ -18,7 +21,7 @@ body {
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: var(--secondary);
 }
 
 .nav,
@@ -108,8 +111,8 @@ body {
 }
 
 .name {
-  font-weight: 700;
-  font-size: 120px;
+  font-weight: 800;
+  font-size: 80px;
   text-transform: uppercase;
   position: fixed;
   top: 0;
@@ -119,6 +122,7 @@ body {
   padding-right: 0;
   z-index: 20;
   user-select: none;
+  font-family: var(--main);
 }
 
 .subtitle {
@@ -129,6 +133,7 @@ body {
   right: 0;
   bottom: 0;
   padding: var(--big-padding);
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .location {
@@ -163,7 +168,7 @@ body {
 
 @media screen and (max-width: 960px) {
   .name {
-    font-size: 46px;
+    font-size: 30px;
   }
   .subtitle {
     right: unset;
