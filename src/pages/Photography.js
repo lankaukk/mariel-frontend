@@ -31,6 +31,7 @@ export var Photography = (props) => {
         {photos.map((photo) => (
           <div className="photo-container">
             <div
+              key={photo.imageUrl}
               className="photo yes"
               style={{ backgroundImage: `url(${photo.imageUrl})` }}
             />
