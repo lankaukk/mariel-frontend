@@ -1,0 +1,33 @@
+.photography {
+  overflow: hidden scroll;
+  background-color: var(--black);
+}
+
+.photos {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--big-padding);
+  flex-wrap: wrap;
+  padding: var(--big-padding);
+}
+
+.photo {
+  height: 25vw;
+  width: 25vw;
+  overflow: hidden;
+  background-size: cover;
+  border-radius: 1px;
+}
+
+.photo:hover {
+  filter: brightness(0.4);
+  transition: border-radius 0.4s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}

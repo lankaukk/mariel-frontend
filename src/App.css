@@ -3,7 +3,7 @@
   --black: #111111;
   --white: #ededed;
 
-  --main: 'Syne', sans-serif;
+  --main: "Syne", sans-serif;
   --secondary: "Josefin Sans", sans-serif;
 }
 
@@ -22,6 +22,13 @@ body {
   width: 100vw;
   overflow-x: hidden;
   font-family: var(--secondary);
+}
+
+.home,
+.design,
+.photography {
+  height: 80vh;
+  margin-top: 10vh;
 }
 
 .nav,
@@ -84,29 +91,6 @@ body {
 
 .nav-item:hover {
   background: #ffffff30;
-  cursor: pointer;
-}
-
-.photo_container {
-  height: 80vh;
-  box-sizing: border-box;
-  padding: 0 var(--big-padding);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  gap: var(--big-padding);
-  flex-wrap: wrap;
-}
-
-.photo {
-  height: 200px;
-  border-radius: 20px;
-}
-
-.photo:hover {
-  border-radius: 160px 20px 20px 20px;
-  transition: border-radius 0.4s;
-  transition-timing-function: ease-in-out;
   cursor: pointer;
 }
 

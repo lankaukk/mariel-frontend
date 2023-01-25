@@ -25,7 +25,7 @@ export var Design = (props) => {
   }, []);
 
   return (
-    <div className="photo_container">
+    <div className="design">
       {projects.map((project) => (
         <div>
           <h1>{project.title}</h1>

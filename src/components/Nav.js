@@ -30,7 +30,6 @@ export var Nav = (props) => {
       <div className={click ? "nav-menu active" : "nav-menu"}>
         <NavItem name="design" />
         <NavItem name="photography" />
-        <NavItem name="about" />
         <NavItem name="contact" />
       </div>
     </div>

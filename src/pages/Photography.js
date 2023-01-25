@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import "./photography.css";
 import { useState, useEffect } from "react";
 
 export var Photography = (props) => {
@@ -25,10 +26,17 @@ export var Photography = (props) => {
   }, []);
 
   return (
-    <div className="photo_container">
-      {photos.map((photo) => (
-        <img className="photo" src={photo.imageUrl} alt="pix" />
-      ))}
+    <div className="photography">
+      <div className="photos">
+        {photos.map((photo) => (
+          <div className="photo-container">
+            <div
+              className="photo"
+              style={{ backgroundImage: `url(${photo.imageUrl})` }}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

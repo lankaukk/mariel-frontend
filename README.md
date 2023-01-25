@@ -20,5 +20,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 # Todo
 
-• custom mouse png
-• add animated disco ball to home page https://codepen.io/lankaukk/pen/ZEjLpVW
+[ ] custom mouse png
+[ ] add animated disco ball to home page https://codepen.io/lankaukk/pen/ZEjLpVW
+[ ] custom favicon
+[ ] disable right-click to save images
