@@ -1,0 +1,50 @@
+.design {
+  overflow: hidden scroll;
+  background-color: var(--black);
+}
+
+.projects {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--big-padding);
+  flex-wrap: wrap;
+  padding: var(--big-padding);
+}
+
+.project-card {
+  height: 25vw;
+  width: 25vw;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(33, 33, 33, 0.9);
+  color: var(--white);
+  font-size: 2em;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.overlay:hover {
+  transition: border-radius 0.4s;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+}

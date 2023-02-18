@@ -26,8 +26,5 @@
 }
 
 .photo:hover {
-  filter: brightness(0.4);
-  transition: border-radius 0.4s;
-  transition-timing-function: ease-in-out;
   cursor: pointer;
 }

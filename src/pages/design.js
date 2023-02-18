@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import "./design.css";
 import { useState, useEffect } from "react";
 
 export var Design = (props) => {
@@ -26,12 +27,21 @@ export var Design = (props) => {
 
   return (
     <div className="design">
-      {projects.map((project) => (
-        <div>
-          <h1>{project.title}</h1>
-          <p>{project.description}</p>
-        </div>
-      ))}
+      <div className="projects">
+        {projects.map((project) =>
+          project.images ? (
+            <div
+              className="project-card"
+              key={project.title}
+              style={{
+                backgroundImage: `url(${project.images[0]}`,
+              }}
+            >
+              <div className="overlay">{project.title}</div>
+            </div>
+          ) : null
+        )}
+      </div>
     </div>
   );
 };
