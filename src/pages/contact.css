@@ -6,17 +6,15 @@
 }
 
 .pro-pic {
-  height: 300px;
-  width: 80%;
+  height: 220px;
+  width: 70%;
   background-image: url(/public/images/pro-pic.jpg);
   background-size: cover;
   background-position: 50%;
- 
 }
 
 .contact-description {
-    font-size: 1.4em;
-    line-height: 1.2em;
-    text-align: left;
-    
+  font-size: 1.4em;
+  line-height: 1.2em;
+  text-align: left;
 }
