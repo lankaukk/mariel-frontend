@@ -38,7 +38,7 @@
   align-items: center;
   background: rgba(33, 33, 33, 0.9);
   color: var(--white);
-  font-size: 2em;
+  font-size: 1.8em;
   cursor: pointer;
   opacity: 0;
 }

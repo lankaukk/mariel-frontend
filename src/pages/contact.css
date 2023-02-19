@@ -1,0 +1,22 @@
+.talk-to-me {
+  font-family: var(--main);
+  font-weight: 800;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+.pro-pic {
+  height: 300px;
+  width: 80%;
+  background-image: url(/public/images/pro-pic.jpg);
+  background-size: cover;
+  background-position: 50%;
+ 
+}
+
+.contact-description {
+    font-size: 1.4em;
+    line-height: 1.2em;
+    text-align: left;
+    
+}
