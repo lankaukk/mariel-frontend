@@ -1,3 +1,15 @@
+.contact {
+  position: fixed;
+  overflow-y: scroll;
+
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
 .talk-to-me {
   font-family: var(--main);
   font-weight: 800;
@@ -12,9 +24,49 @@
   background-size: cover;
   background-position: 50%;
 }
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  gap: 30px;
+  flex-direction: row;
+}
 
 .contact-description {
   font-size: 1.4em;
   line-height: 1.2em;
   text-align: left;
+}
+.contact-text-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
+@media screen and (max-width: 960px) {
+  .contact {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  .talk-to-me {
+    width: 80vw;
+    font-size: 50px;
+  }
+  .pro-pic {
+    height: 220px;
+    width: 60vw;
+  }
+  .contact-info-container {
+    flex-direction: column;
+  }
+  .contact-description {
+    font-size: 1em;
+  }
+  .contact-text-container {
+    align-items: center;
+    gap: 30px;
+  }
 }

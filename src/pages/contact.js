@@ -5,37 +5,11 @@ import { FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export var Contact = (props) => {
   return (
-    <div
-      className="contact"
-      style={{
-        display: "flex",
-        width: "100vw",
-        alignItems: "center",
-        justifyContent: "center",
-        flexDirection: "column",
-        gap: 60,
-      }}
-    >
+    <div className="contact">
       <div className="talk-to-me">Talk To Me!</div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          width: "60vw",
-          gap: 60,
-        }}
-      >
+      <div className="contact-info-container">
         <div className="pro-pic" />
-        <div
-          style={{
-            display: "flex",
-            alignItems: "flex-start",
-            justifyContent: "center",
-            flexDirection: "column",
-            gap: 60,
-          }}
-        >
+        <div className="contact-text-container">
           <div className="contact-description">
             Hello! My name is Mariel Quadrino, and I’m a communication designer
             based in Brooklyn, NY. For project inquiries feel free to email me{" "}
