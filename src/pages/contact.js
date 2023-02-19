@@ -13,21 +13,22 @@ export var Contact = (props) => {
           <div className="contact-description">
             Hello! My name is Mariel Quadrino, and I’m a communication designer
             based in Brooklyn, NY. For project inquiries feel free to email me{" "}
-            <a href="mailto: mckaylalankau@gmail.com" target="_blank">
+            <a href="mailto: mckaylalankau@gmail.com" target="_blank" rel="noreferrer" >
               (marielquadrino@gmail.com)
             </a>{" "}
             or DM me on Instagram or LinkedIn.
           </div>
           <div style={{ display: "flex", flexDirection: "row", gap: 20 }}>
-            <a href="mailto: mckaylalankau@gmail.com" target="_blank">
+            <a href="mailto: mckaylalankau@gmail.com" target="_blank" rel="noreferrer" >
               <FaEnvelope />
             </a>
-            <a href="https://www.instagram.com/mariel_jpg/" target="_blank">
+            <a href="https://www.instagram.com/mariel_jpg/" target="_blank" rel="noreferrer" >
               <FaInstagram />
             </a>
             <a
               href="https://www.linkedin.com/in/mariel-quadrino/"
               target="_blank"
+              rel="noreferrer" 
             >
               <FaLinkedin />
             </a>
