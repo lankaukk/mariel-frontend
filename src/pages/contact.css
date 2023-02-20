@@ -13,7 +13,7 @@
 .talk-to-me {
   font-family: var(--main);
   font-weight: 800;
-  font-size: 80px;
+  font-size: 40pt;
   text-transform: uppercase;
 }
 
@@ -22,7 +22,7 @@
   width: 70%;
   background-image: url(/public/images/pro-pic.jpg);
   background-size: cover;
-  background-position: 50%;
+  background-position: 1% 20%;
 }
 .contact-info-container {
   display: flex;

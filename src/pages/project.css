@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   gap: var(--big-padding);
-  background-color: blue;
   padding: 0 var(--big-padding);
 }
 
