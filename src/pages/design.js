@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import "./design.css";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export var Design = (props) => {
   const [projects, setProjects] = useState([]);
@@ -30,15 +31,17 @@ export var Design = (props) => {
       <div className="projects">
         {projects.map((project) =>
           project.images ? (
-            <div
-              className="project-card"
-              key={project.title}
-              style={{
-                backgroundImage: `url(${project.images[0]}`,
-              }}
-            >
-              <div className="overlay">{project.title}</div>
-            </div>
+            <Link to={"/design/" + project.title.split(" ").join("")}>
+              <div
+                className="project-card"
+                key={project.title}
+                style={{
+                  backgroundImage: `url(${project.images[0]}`,
+                }}
+              >
+                <div className="overlay">{project.title}</div>
+              </div>
+            </Link>
           ) : null
         )}
       </div>

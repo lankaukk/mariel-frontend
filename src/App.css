@@ -29,7 +29,8 @@ a {
 .home,
 .design,
 .photography,
-.contact {
+.contact,
+.project {
   height: 80vh;
   margin-top: 10vh;
 }
