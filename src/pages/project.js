@@ -11,13 +11,12 @@ export var Project = (props) => {
       </div>
       <div className="project-images">
         {props.project.images.map((image) => (
-          <div
-            className="project-image"
+          <img
+            src={image}
             key={image}
-            style={{
-              backgroundImage: `url(${image}`,
-            }}
-          ></div>
+            alt="project"
+            className="new-project-image"
+          />
         ))}
       </div>
     </div>
