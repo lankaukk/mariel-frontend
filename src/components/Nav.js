@@ -13,7 +13,7 @@ export var Nav = (props) => {
   const path = location.pathname;
 
   const NavItem = (props) => {
-    return path == props.route ? (
+    return path === props.route ? (
       <div
         className="nav-item"
         onClick={closeMobileMenu}
@@ -30,7 +30,7 @@ export var Nav = (props) => {
 
   return (
     <div className="nav">
-      {path == "/" ? null : (
+      {path === "/" ? null : (
         <Link to="/" onClick={closeMobileMenu}>
           <div className="name" style={{ fontSize: "1em", zIndex: 5000 }}>
             Mariel Quadrino

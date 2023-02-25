@@ -29,7 +29,7 @@ export var Photography = (props) => {
     <div className="photography">
       <div className="photos">
         {photos.map((photo) => (
-          <div className="photo-container">
+          <div className="photo-container" key={photo.imageUrl}>
             <div
               key={photo.imageUrl}
               className="photo yes"

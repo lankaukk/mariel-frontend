@@ -31,7 +31,10 @@ export var Design = (props) => {
       <div className="projects">
         {projects.map((project) =>
           project.images ? (
-            <Link to={"/design/" + project.title.split(" ").join("")}>
+            <Link
+              to={"/design/" + project.title.split(" ").join("")}
+              key={project.title}
+            >
               <div
                 className="project-card"
                 key={project.title}
