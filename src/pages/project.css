@@ -3,6 +3,9 @@
   flex-direction: row;
   gap: var(--big-padding);
   padding: 0 var(--big-padding);
+
+  margin-top: 10vh;
+  height: unset;
 }
 
 .project-info,
@@ -29,25 +32,13 @@
 
 .project-images {
   overflow-y: auto;
-}
-
-.project-images::-webkit-scrollbar {
-    display: none;
-  }
-
-.project-main-image {
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: 50%;
-  border-radius: 1px;
-}
-
-.project-other-images {
   display: flex;
   flex-flow: row wrap;
   gap: var(--big-padding);
+}
+
+.project-images::-webkit-scrollbar {
+  display: none;
 }
 
 .project-image {
@@ -56,4 +47,37 @@
   border-radius: 1px;
   width: 45%;
   height: 200px;
+}
+
+@media screen and (max-width: 960px) {
+  .project {
+    flex-direction: column;
+    gap: var(--small-padding);
+    padding: 0 var(--small-padding);
+  }
+
+  .project-info {
+    width: 100%;
+    padding: 0px;
+    padding-top: var(--small-padding);
+    gap: var(--small-padding);
+  }
+
+  .project-title {
+    font-size: 22pt;
+  }
+
+  .project-images {
+    width: 100vw;
+    flex-direction: column;
+    /* position: absolute;*/
+   margin-left: -60px; 
+   margin-bottom: var(--big-padding);
+  }
+
+  .project-image {
+    width: 100%;
+    height: 300px;
+  }
+
 }

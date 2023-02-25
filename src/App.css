@@ -1,5 +1,6 @@
 :root {
   --big-padding: 40px;
+  --small-padding: 20px;
   --black: #111111;
   --white: #ededed;
 
@@ -192,6 +193,7 @@ a {
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 50;
+    padding: 0px;
     padding-bottom: var(--big-padding);
   }
 
