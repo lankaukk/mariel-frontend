@@ -7,13 +7,11 @@
   width: 100vw;
   box-sizing: border-box;
   padding: 0;
-  overflow: hidden;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
   gap: var(--big-padding);
-  flex-wrap: wrap;
   padding: var(--big-padding);
 }
 
@@ -50,4 +48,15 @@
   transition: border-radius 0.4s;
   transition-timing-function: ease-in-out;
   opacity: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .projects {
+    gap: var(--small-padding);
+    padding: var(--small-padding);
+  }
+  .project-card {
+    height: 35vw;
+    width: 35vw;
+  }
 }

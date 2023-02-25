@@ -28,3 +28,14 @@
 .photo:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 960px) {
+  .photos {
+    gap: var(--small-padding);
+    padding: var(--small-padding);
+  }
+  .photo {
+    height: 35vw;
+    width: 35vw;
+  }
+}

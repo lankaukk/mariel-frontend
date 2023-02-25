@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import "./home.css"
+import "./home.css";
 
 export var Home = (props) => {
   return (
@@ -11,8 +11,8 @@ export var Home = (props) => {
         Quadrino
       </div>
       <div className="subtitle">
-        <div className='location'>New York, NY</div>
-        <div className='occupation' >Communication Designer</div>
+        <div className="location">New York, NY</div>
+        <div className="occupation">Communication Designer</div>
       </div>
     </div>
   );
