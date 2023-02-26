@@ -29,13 +29,12 @@ export var Photography = (props) => {
     <div className="photography">
       <div className="photos">
         {photos.map((photo) => (
-          <div className="photo-container" key={photo.imageUrl}>
-            <div
-              key={photo.imageUrl}
-              className="photo yes"
-              style={{ backgroundImage: `url(${photo.imageUrl})` }}
-            />
-          </div>
+          <img
+            src={photo.imageUrl}
+            key={photo.imageUrl}
+            alt="beautiful photograph"
+            className="new-project-image"
+          />
         ))}
       </div>
     </div>

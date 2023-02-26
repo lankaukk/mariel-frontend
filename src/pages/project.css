@@ -22,12 +22,13 @@
 .project-title {
   width: 100%;
   font-family: var(--main);
-  font-size: 40pt;
+  font-size: 32pt;
   font-weight: 800;
 }
 
 .project-description {
   text-align: left;
+  letter-spacing: .04em;
 }
 
 .project-images {
