@@ -31,11 +31,13 @@
 
 @media screen and (max-width: 960px) {
   .photos {
-    gap: var(--small-padding);
-    padding: var(--small-padding);
+    /* gap: var(--small-padding);
+    padding: var(--small-padding); */
+    display: block;
   }
   .photo {
     height: 35vw;
     width: 35vw;
+    margin-bottom: var(--small-padding);
   }
 }
