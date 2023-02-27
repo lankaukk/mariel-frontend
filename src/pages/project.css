@@ -1,8 +1,9 @@
 .project {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: var(--big-padding);
   padding: 0 var(--big-padding);
+  align-items: center;
 
   margin-top: 10vh;
   height: unset;
@@ -10,37 +11,31 @@
 
 .project-info,
 .project-images {
-  width: 50%;
   height: 100%;
-  padding: var(--big-padding);
-
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: var(--big-padding);
 }
 
-.project-title {
+.project-images {
   width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.project-title {
+  width: 50%;
   font-family: var(--main);
   font-size: 32pt;
   font-weight: 800;
 }
 
 .project-description {
+  width: 50%;
   text-align: left;
-  letter-spacing: .04em;
-}
-
-.project-images {
-  overflow-y: auto;
-  display: flex;
-  flex-flow: row wrap;
-  gap: var(--small-padding);
-  padding-left: 0;
-}
-
-.project-images::-webkit-scrollbar {
-  display: none;
+  letter-spacing: 0.04em;
 }
 
 .new-project-image {
@@ -62,10 +57,6 @@
     gap: var(--small-padding);
   }
 
-  .project-title {
-    font-size: 22pt;
-  }
-
   .project-images {
     width: 100vw;
     flex-direction: column;
@@ -74,9 +65,18 @@
     margin-bottom: var(--big-padding);
   }
 
+  .project-title {
+    width: 80%;
+    font-size: 22pt;
+  }
+
+  .project-description {
+    width: 80%;
+  }
+
   .new-project-image {
     width: 80%;
     height: fit-content;
-    object-fit: contain 
+    object-fit: contain;
   }
 }
