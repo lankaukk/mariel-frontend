@@ -77,5 +77,6 @@
   .new-project-image {
     width: 80%;
     height: fit-content;
+    object-fit: contain 
   }
 }
