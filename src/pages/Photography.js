@@ -33,7 +33,7 @@ export var Photography = (props) => {
             src={photo.imageUrl}
             key={photo.imageUrl}
             alt="beautiful photograph"
-            className="new-project-image"
+            className="new-photo"
           />
         ))}
       </div>

@@ -4,20 +4,23 @@
 }
 
 .photos {
-  width: 100vw;
-  box-sizing: border-box;
-  padding: 0;
-  overflow: hidden;
+  width: 100%;
+
   display: flex;
-  flex-direction: row;
+
   align-items: center;
   justify-content: center;
-  gap: var(--big-padding);
-  flex-wrap: wrap;
+
   padding: var(--big-padding);
+
+  overflow-y: auto;
+
+  flex-flow: row wrap;
+  gap: var(--small-padding);
+  padding-left: 0;
 }
 
-.photo {
+.new-photo {
   height: 25vw;
   width: 25vw;
   overflow: hidden;
@@ -25,19 +28,19 @@
   border-radius: 1px;
 }
 
-.photo:hover {
-  cursor: pointer;
-}
 
 @media screen and (max-width: 960px) {
   .photos {
-    /* gap: var(--small-padding);
-    padding: var(--small-padding); */
-    display: block;
+    gap: var(--small-padding);
+    padding: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: unset;
   }
-  .photo {
-    height: 35vw;
-    width: 35vw;
-    margin-bottom: var(--small-padding);
+
+  .new-photo {
+    width: 100%;
+    height: fit-content;
+    object-fit: contain;
   }
 }
