@@ -10,7 +10,8 @@
 
 body {
   background-color: var(--black);
-  cursor: url("https://cdn.sanity.io/images/meytmqps/production/7933873e8469cb9bf5ba5094d53497743d414ba8-60x60.png"), auto; 
+  cursor: url("https://cdn.sanity.io/images/meytmqps/production/7933873e8469cb9bf5ba5094d53497743d414ba8-60x60.png"),
+    auto;
 }
 
 a {
@@ -170,6 +171,10 @@ a {
   .open,
   .closed {
     display: block;
+  }
+
+  .nav {
+    margin-bottom: 140px;
   }
 
   .nav-menu {

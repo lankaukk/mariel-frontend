@@ -12,7 +12,6 @@ export var Project = (props) => {
       {props.project.video ? (
         <iframe
           src={props.project.video}
-          // src='https://www.youtube.com/embed/gBpeTexCQA0'
           alt="Portfolio Video"
           title="YouTube video player"
           frameborder="0"
