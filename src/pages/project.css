@@ -39,6 +39,11 @@
   line-height: 1.2em;
 }
 
+.project-video {
+  width: 50%;
+  height: 400px;
+}
+
 .new-project-image {
   width: 45%;
   height: fit-content;
@@ -73,6 +78,11 @@
 
   .project-description {
     width: 80%;
+  }
+
+  .project-video {
+    width: 80%;
+    height: 200px;
   }
 
   .new-project-image {

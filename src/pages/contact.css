@@ -18,8 +18,8 @@
 }
 
 .pro-pic {
-  height: 420px;
-  width: 70%;
+  height: 300px;
+  width: 100%;
   background-image: url(/public/images/pro-pic.jpg);
   background-size: cover;
   background-position: 1% 20%;
