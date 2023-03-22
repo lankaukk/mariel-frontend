@@ -5,7 +5,7 @@
   --white: #ededed;
 
   --main: "Syne", sans-serif;
-  --secondary: "Josefin Sans", sans-serif;
+  --secondary: 'Prompt', sans-serif;
 }
 
 body {
@@ -48,8 +48,7 @@ a {
   align-items: center;
   gap: 20px;
   align-content: center;
-  box-sizing: border-box;
-  padding: var(--big-padding);
+
 }
 
 .footer {
@@ -61,9 +60,13 @@ a {
 
 .nav {
   z-index: 200;
-  padding: 0;
   background: transparent;
+  user-select: none;
+  justify-content: right;
+  padding-top: var(--small-padding);
+  padding-right: var(--big-padding);
 }
+
 
 .nav-menu {
   display: flex;
@@ -82,7 +85,8 @@ a {
 }
 
 .nav-item {
-  font-size: 1.2em;
+  font-size: 18pt;
+  font-weight: 500;
   padding: 15px;
   border-radius: 2px;
   transition: all 0.2s ease-in-out;
@@ -96,7 +100,7 @@ a {
 
 .name {
   font-weight: 800;
-  font-size: 80px;
+  font-size: 50px;
   text-transform: uppercase;
   position: fixed;
   top: 0;
@@ -128,10 +132,6 @@ a {
   font-size: 27px;
 }
 
-.nav {
-  user-select: none;
-  justify-content: right;
-}
 
 .open {
   transform: rotate(45deg);

@@ -1,6 +1,13 @@
-.home {
-  background-image: url(https://bestanimations.com/media/mirror-balls/1125958995disco-ball-animated-gif-13.gif);
-  background-size: 100vw;
+.home-image {
+  position: fixed;
+  opacity: .6;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  
+  background-image: url(https://cdn.sanity.io/images/meytmqps/production/755f540a62dcad5f972a60ac957a7d88d2716968-1920x1280.jpg);
+  /* background-size: 100%; */
   background-repeat: no-repeat;
   background-position: center;
+  object-fit: cover;
 }
